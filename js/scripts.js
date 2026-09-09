@@ -9,6 +9,12 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    // Keep the footer copyright year current
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+
     // Activate Bootstrap scrollspy on the main nav element
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
